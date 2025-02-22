@@ -2,24 +2,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>sm64js</title>
+    <title>xkoop's sm64js</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178244102-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || []
-        function gtag() { dataLayer.push(arguments) }
-        gtag('js', new Date())
-
-        gtag('config', 'UA-178244102-1')
-    </script>
-
 </head>
 
 <body class="text-center">
@@ -28,19 +17,17 @@
     <div class="cover-container d-flex h-100 mx-auto flex-column">
         <header class="masthead">
             <div class="inner">
-                <h3 class="masthead-brand rainbowText">Super Mario 64 JS</h3>
+                <h3 class="masthead-brand rainbowText">XKoop's SM64JS</h3>
                 <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link" href="#What">About</a>
-                    <a class="nav-link" href="https://github.com/sm64js/sm64js">Source Code</a>
-                    <a class="nav-link" href="https://discord.gg/7UaDnJt">Discord Server</a>
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link" href="https://github.com/XKoop7321/XKoops-SM64JS">Source Code</a>
                 </nav>
             </div>
         </header>
 
         <main role="main" class="inner cover" hidden id="mainContent">
-            <h1 class="cover-heading rainbowText">Super Mario 64 - Javascript Port</h1>
-            <h6 style="color:red">This project is currently still being developed. This page may be live from time to time for testing, but there may be glitches and performance issues. The server will go down and restart at random times without warning. If you would like to help with the project or have feedback please contact me.</h6>
+            <h1 class="cover-heading rainbowText">XKoop's SM64JS</h1>
+            <h6 style="color:red">This project is currently still being developed. This page may be live from time to time for testing, but there may be glitches and performance issues. The server will go down and restart at random times without warning.</h6>
             <form id="romSelect" class="form-group">
                 <h4 style="color:#fa3e3e">Select US sm64 (z64) ROM File from your computer</h4>
                 <input id="romFile" class="btn btn-secondary btn-sm" type="file">
@@ -50,7 +37,7 @@
 
             <div class="row" style="justify-content:center">
                 <button id="startbutton" type="button" class="btn btn-success" disabled>Start Game</button>
-                <a href="https://github.com/sm64js/sm64js/issues" style="margin-left:30px" type="button" class="btn btn-warning">Submit Bug</a>
+                <a href="https://github.com/XKoop7321/XKoops-SM64JS/issues" style="margin-left:30px" type="button" class="btn btn-warning">Submit Bug</a>
                 <button id="deleteRom" type="button" style="margin-left:30px" class="btn btn-danger">Delete Rom</button>
 
             </div>
@@ -241,32 +228,13 @@
             <a name="What"></a>
             <h4>What is this?</h4>
             <p>
-                This is an ongoing work-in-progress port of the <a href="https://github.com/n64decomp/sm64">decompilation</a> of original Nintendo game, Super Mario 64, to native Javascript (No Emulation) (No Web Assembly).
-                This project required creating a Javascript WebGL port of <a href="https://github.com/Emill/n64-fast3d-engine">N64 Fast 3D Renderer</a> originally implemented with OpenGL in C. This project also includes the development of online mass multiplayer versions of sm64js and other custom multiplayer game modes.
+             My fork of sm64js.
             </p>
             <br />
 
             <a name="Purpose"></a>
-            <h4>What is the purpose of this port?</h4>
-            <ul style="display:inline-block;vertical-align:middle;text-align:left">
-                <li>
-                    <b>Extensibility:</b> More access to more developers to add custom content
-                    <ul style="padding-left:40px">
-                        <li>Rapid Prototyping</li>
-                        <li>More friendly to importing other software modules/packages</li>
-                        <li>More friendly to prototyping multiplayer custom games/mods</li>
-                    </ul>
-                </li>
-                <li><b>Portablity:</b> Sm64 projects can run on any device with a web browser anywhere without needing to download or install anything</li>
-                <li>Opportunity to refactor / rewrite with modern coding style and cleanup</li>
-            </ul>
-            <br />
-            <br />
-
-            <a name="WASM"></a>
-            <h4>What's wrong with Web Assembly / Emscripten</h4>
-            <p>Nothing. However, I believe access to this game's source code in a higher level programming language opens it up to a wider pool of potentially capable developers / modders. And seems to me like a natural next step following in the amazing work done by the decomp team and pc port.</p>
-            <br />
+            <h4>What is the purpose of xkoop's sm64js?</h4>
+            <p>The purpose of xkoop's sm64js is to be my first fork with a running server.</p>
 
             <a name="Credits"></a>
             <h4>Credits</h4>
@@ -275,18 +243,14 @@
 
             <div class="row" style="justify-content:center;">
                 <h5>
-                    <a style="font-weight:bold !important;" href="https://github.com/sm64js/sm64js/graphs/contributors">Developers / Contributors</a>
+                    <a style="font-weight:bold !important;" href="https://github.com/XKoop7321/XKoops-SM64JS/graphs/contributors">Developers / Contributors</a>
                 </h5>
 
             </div>
             <div class="row" style="justify-content:center;">
                 <p>
-                    <a style="color:#fdffd4" href="https://sm64js.com">Snuffy</a>,
-                    <a style="color:#fdffd4" href="https://github.com/ScottDikowitz">ScottDikowitz</a>,
-                    <a style="color:#fdffd4" href="https://github.com/luphoria">luphoria</a>,
-                    <a style="color:#fdffd4" href="https://github.com/TERRAERROR">0x2480</a>,
-                    <a style="color:#fdffd4" href="https://github.com/Tarnadas">Mario Reder</a>,
-                    <a style="color:#fdffd4" href="https://github.com/GlitchyPSIX">GlitchyPSI</a>
+                    <a style="color:#fdffd4" href="https://github.com/XKoop7321">XKoop7321</a>,
+                    <a style="color:#fdffd4" href="https://github.com/GManTheMarioGuy">GManTheMarioGuy</a>
                 </p>
             </div>
             <br />
@@ -354,22 +318,6 @@
                 </p>
             </div>
 
-
-            <a name="Contact"></a>
-            <h4>Contact</h4>
-            <p>
-                Questions? Suggestions? Want to help with this project? =)
-                <br />
-                I have a discord server dedicated to sm64js: <a href="https://discord.gg/7UaDnJt"> Join Here </a>
-                <br />
-                Discord: snuffysasa#2779
-            </p>
-            <br />
-
-        </main>
-
-    </div>
-
     <div id="rules-modal" class="modal fade" role="dialog" >
         <div class="modal-dialog" style="max-width: 600px !important" >
 
@@ -384,7 +332,7 @@
                     <p>Inappropriate or offensive behavior may result in temporary or permanent ban</p>
                     <p>It is strongly recommended to have a strong/stable internet connection, use a fast computer, and use <b>Google Chrome</b></p>
                     <p>If you have a good connection but are experiencing problems with framerate try going to a part of the map that is less dense with players</p>
-                    <p>For more troubleshooting or issues playing the game or information on the new features, please checkout the <a style="color:Highlight" href="https://discord.gg/7UaDnJt">Discord Server</a> </p>
+                    <p>You must be 12 years old or older</p>
 
                     <br />
                     <div class="row" style="text-align:right">
@@ -638,7 +586,7 @@
                     <h6 style="text-align:center" id="gamepadMessage">
                         Is your gamepad not working correctly?
                         <br />
-                        Contact me so I can support more gamepads. Discord: snuffysasa#2779 /
+                        Report issue on
                         <a href="https://github.com/sm64js/sm64js/issues" style="color:blue;font-weight:bold">Github</a>
                     </h6>
                 </div>
