@@ -35,8 +35,8 @@ const url = new URL(window.location.href)
 const websocketServerPath = process.env.NODE_ENV === 'production'
     ? `${url.protocol == "https:" ? "wss" : "ws"}://${window.location.host}/ws/`
     : url.protocol == "https:"
-        ? `wss://${url.hostname}:3000`
-        : `ws://localhost:3000`
+        ? `wss://zippy-jaynell-xkoop7321-3cec8872.koyeb.app:3000`
+        : `ws://${url.hostname}:3000`
 
 const socket = new WebSocket(websocketServerPath)
 
